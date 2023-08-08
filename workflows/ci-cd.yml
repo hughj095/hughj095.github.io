@@ -26,5 +26,5 @@ jobs:
         API_KEY: ${{ secrets.API_KEY }}
       run: |
         # Use the API_KEY environment variable in your build and deploy commands
-        echo "Using API Key: $API_KEY"
+        echo "API_KEY=${{ secrets.API_KEY }}" >> $GITHUB_ENV
         # Add your build and deploy commands here
