@@ -4,9 +4,10 @@ const chatbox = document.querySelector(".chatbox");
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
+const apiKey = process.env.API_KEY;
 
 let userMessage = null; // Variable to store user's message
-const API_KEY = process.env.API_KEY; // Paste your API key here, referenced from github ci-cd.yml in workflows folder
+const API_KEY = apiKey; // Paste your API key here, referenced from github ci-cd.yml in workflows folder
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
