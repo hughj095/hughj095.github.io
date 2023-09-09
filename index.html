@@ -1,4 +1,56 @@
-<iframe lang="en"; style="position: fixed; bottom: 0; left: 0; width: 100%; height: 100%; border: none;"
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Training</title>
+    <iframe lang="en"; style="position: fixed; bottom: 0; left: 0; width: 100%; height: 100%; border: none;"
   src="https://nodebot-v2-0.vercel.app/" frameborder="0" scrolling="auto"></iframe>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="urlInput" placeholder="Enter a URL here">
+        <button id="trainButton">Train Chatbot</button>
+    </div>
+
+    <script>
+        document.getElementById("trainButton").addEventListener("click", function () {
+            // Add your JavaScript logic here for handling the button click event
+            alert("Training Chatbot with URL: " + document.getElementById("urlInput").value);
+        });
+    </script>
+</body>
+</html>
 
 
